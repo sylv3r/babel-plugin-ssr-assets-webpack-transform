@@ -1,0 +1,56 @@
+{
+  "name": "babel-plugin-ssr-assets-webpack-loaders",
+  "version": "1.0.0-dev",
+  "description": "Enable SSR for all assets using webpack loaders",
+  "main": "lib/index.js",
+  "ava": {
+    "files": [
+      "src/__tests__/*.spec.js"
+    ],
+    "require": [
+      "@babel/register"
+    ],
+    "babelrc": "inherit"
+  },
+  "scripts": {
+    "test": "npm run lint && ava -v",
+    "build": "babel src/ --out-dir lib/",
+    "pre-publish": "npm run build",
+    "lint": "eslint src/"
+  },
+  "license": "MIT",
+  "keywords": [
+    "babel-plugin",
+    "ssr",
+    "webpack"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.42",
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/node": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "@babel/preset-stage-0": "^7.0.0-beta.42",
+    "@babel/register": "^7.0.0-beta.42",
+    "ava": "^1.0.0-beta.4",
+    "babel-eslint": "^8.x",
+    "eslint": "^4.x",
+    "eslint-config-airbnb-base": "^12.x",
+    "eslint-plugin-ava": "^4.5.1",
+    "eslint-plugin-import": "^2.7.0",
+    "webpack": "^4.0.0",
+    "webpack-cli": "^2.0.0"
+  },
+  "peerDependencies": {
+    "webpack": ">= 4.0.0",
+    "webpack-cli": ">= 2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sylv3r/babel-plugin-ssr-assets-webpack-laoders.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/sylv3r/babel-plugin-ssr-assets-webpack-loaders/issues"
+  },
+  "homepage": "https://github.com/sylv3r/babel-plugin-ssr-assets-webpack-loaders#readme"
+}

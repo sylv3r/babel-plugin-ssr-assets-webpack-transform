@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "airbnb-base",
+    "plugin:ava/recommended"
+  ],
+  "env": {
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "plugins": ["ava"],
+  "rules": {
+    "semi": 0,
+    "import/extensions": 0,
+    "no-multi-spaces": [0, { "exceptions": { "ImportDeclaration": true } }],
+    "no-unused-expressions": [0, { "allowShortCircuit": true }],
+    "arrow-parens": [2, "as-needed", { "requireForBlockBody": false }],
+    "space-before-function-paren": [2, "always"],
+    "no-unused-vars": [2, { "argsIgnorePattern": "^_" }]
+  }
+}
